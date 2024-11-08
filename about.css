@@ -1,0 +1,65 @@
+@import url('index.css');
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0; /* Remove padding to let the box fill the full page */
+}
+
+.about-content {
+    background:transparent;
+    padding: 3rem; /* Padding inside the box for readability */
+    border-radius: 0; /* Remove border radius to extend to page edges */
+    color: #ffffff;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    box-shadow: none; /* Remove shadow for full-page look */
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+    overflow-y: auto;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    color: #ff00ee;
+    margin-bottom: 1rem;
+}
+
+.about-content h2 {
+    font-size: 1.8rem;
+    color: #ff00ff;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
